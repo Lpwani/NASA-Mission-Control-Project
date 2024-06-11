@@ -28,3 +28,5 @@ const App = () => {
 };
 
 export default App;
+
+// This is app.js file
