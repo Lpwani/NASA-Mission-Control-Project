@@ -1,0 +1,20 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "These a learning project and not asscociated with NASA organization. A web app designed as mission launching facility for NASA Space program. These web app consist of interactive user interface, scalable and efficient backend facility with MongoDB as a database.",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "server": "cd server && npm run watch",
+    "client": "cd client && npm start",
+    "watch": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "npm run test --prefix server && npm run test --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
